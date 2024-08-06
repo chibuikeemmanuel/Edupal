@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings - Edupal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ff7200;
+        }
+
+        .container {
+            margin-top: 75px;
+            padding: 20px;
+        }
+
+        .profile-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .profile-container h2 {
+            color: #ff7200;
+        }
+
+        .profile-container label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .profile-container input, .profile-container select, .profile-container textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .profile-container button {
+            padding: 10px;
+            background: #ff7200;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .profile-container button:hover {
+            background: #fff;
+            color: #ff7200;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Edupal 📚</div>
+        <div class="menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="profile-container">
+            <h2>Profile Settings</h2>
+            <form action="#">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" value="John Doe">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" value="johndoe@example.com">
+
+                <label for="profile-picture">Profile Picture:</label>
+                <input type="file" id="profile-picture" name="profile-picture">
+
+                <label for="privacy">Privacy Settings:</label>
+                <select id="privacy" name="privacy">
+                    <option value="public">Public</option>
+                    <option value="private">Private</option>
+                    <option value="friends">Friends</option>
+                </select>
+
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="4">A brief bio about yourself.</textarea>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

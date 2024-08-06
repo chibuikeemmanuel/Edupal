@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIRTUAL MENTORSHIP AND PEER REVIEW</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .mentorship-request {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mentorship-request form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mentorship-request label {
+  margin-bottom: 10px;
+}
+
+.mentorship-request select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.mentorship-request textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.mentorship-request button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.mentor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.mentor-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mentor-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.mentor-card h3 {
+  margin-bottom: 10px;
+}
+
+.mentor-card p {
+  margin-bottom: 10px;
+}
+
+nav {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mentorship-form.html">Mentorship</a></li>
+      <li><a href="peer-review.html">Peer Review</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>VIRTUAL MENTORSHIP AND PEER REVIEW</h1>
+  </header>
+  <main>
+    <div class="mentorship-request">
+      <h2>Request a Mentor</h2>
+      <form>
+        <label for="mentor-select">Select a Mentor:</label>
+        <select id="mentor-select">
+          <option value="">Select a Mentor</option>
+          <option value="1">John Doe (Software Engineer)</option>
+          <option value="2">Jane Smith (Data Scientist)</option>
+          <option value="3">Bob Johnson (Product Manager)</option>
+        </select>
+        <label for="goals">What are your goals for this mentorship?</label>
+        <textarea id="goals" placeholder="Enter your goals"></textarea>
+        <button type="submit">Request Mentorship</button>
+      </form>
+    </div>
+    <div class="mentor-grid">
+      <div class="mentor-card">
+        <img src="john-doe.jpg" alt="John Doe">
+        <h3>John Doe</h3>
+        <p>Software Engineer</p>
+        <p>Expertise: JavaScript, React, Node.js</p>
+      </div>
+      <div class="mentor-card">
+        <img src="jane-smith.jpg" alt="Jane Smith">
+        <h3>Jane Smith</h3>
+        <p>Data Scientist</p>
+        <p>Expertise: Python, Machine Learning, Data Visualization</p>
+      </div>
+      <div class="mentor-card">
+        <img src="bob-johnson.jpg" alt="Bob Johnson">
+        <h3>Bob Johnson</h3>
+        <p>Product Manager</p>
+        <p>Expertise: Product Development, Agile Methodologies, Team Management</p>
+      </div>
+    </div>
+    <div class="peer-review">
+      <h2>Peer Review and Feedback</h2>
+      <form>
+        <label for="learner-select">Select a Learner:</label>
+        <select id="learner-select">
+          <option value="">Select a Learner</option>
+          <option value="1">John Doe</option>
+          <option value="2">Jane Smith</option>
+          <option value="3">Bob Johnson</option>
+        </select>
+        <label for="feedback">Provide Feedback:</label>
+        <textarea id="feedback" placeholder="Enter your feedback"></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+    <div class="learner-grid">
+      <div class="learner-card">
+        <img src="john-doe.jpg" alt="John Doe">
+        <h3>John Doe</h3>
+        <p>Software Engineer</p>
+        <p>Current Project: Building a React App</p>
+      </div>
+      <div class="learner-card">
+        <img src="jane-smith.jpg" alt="Jane Smith">
+        <h3>Jane Smith</h3>
+        <p>Data Scientist</p>
+        <p>Current Project: Building a Machine Learning Model</p>
+      </div>
+      <div class="learner-card">
+        <img src="bob-johnson.jpg" alt="Bob Johnson">
+        <h3>Bob Johnson</h3>
+        <p>Product Manager</p>
+        <p>Current Project: Developing a New Product Feature</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

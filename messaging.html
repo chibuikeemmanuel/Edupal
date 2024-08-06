@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging System - Edupal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ff7200;
+        }
+
+        .container {
+            margin-top: 75px;
+            padding: 20px;
+        }
+
+        .message-list, .message-form {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .message-list h2, .message-form h2 {
+            color: #ff7200;
+        }
+
+        .message-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .message-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .message-list li:last-child {
+            border-bottom: none;
+        }
+
+        .message-list li p {
+            margin: 0;
+        }
+
+        .message-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+
+        .message-form button {
+            padding: 10px;
+            background: #ff7200;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .message-form button:hover {
+            background: #fff;
+            color: #ff7200;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Edupal 📚</div>
+        <div class="menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="message-list">
+            <h2>Messages</h2>
+            <ul>
+                <li><p><strong>John Doe:</strong> Hello! How can I access the course materials?</p></li>
+                <li><p><strong>Jane Smith:</strong> You can find them under the "Materials" tab.</p></li>
+                
+            </ul>
+        </div>
+
+        <div class="message-form">
+            <h2>Send a Message</h2>
+            <textarea rows="5" placeholder="Type your message here..."></textarea>
+            <button type="submit">Send</button>
+        </div>
+    </div>
+
+</body>
+</html>

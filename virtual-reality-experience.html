@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Reality Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+        .section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1em;
+            padding: 1em;
+        }
+        .vr-scene {
+            width: 100%;
+            height: 500px;
+        }
+        .vr-scene iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Virtual Reality Experience</h1>
+    </header>
+    <main class="container">
+        <section class="section">
+            <h2>Explore VR Content</h2>
+            <div class="vr-scene">
+                <iframe src="https://aframe.io/examples/showcase/hello-world/" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management - Edupal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ff7200;
+        }
+
+        .container {
+            margin-top: 75px;
+            padding: 20px;
+        }
+
+        .form-container, .course-list {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-container h2 {
+            color: #ff7200;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-container input, .form-container textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ff7200;
+            border-radius: 5px;
+            background: transparent;
+            color: #fff;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background: #ff7200;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .form-container button:hover {
+            background: #fff;
+            color: #ff7200;
+        }
+
+        .course-list h2 {
+            color: #ff7200;
+        }
+
+        .course-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .course-list table, .course-list th, .course-list td {
+            border: 1px solid #ddd;
+        }
+
+        .course-list th, .course-list td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .course-list th {
+            background: #333;
+            color: #fff;
+        }
+
+        .course-list td a {
+            color: #ff7200;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .course-list td a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Edupal 📚</div>
+        <div class="menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Add/Edit Course</h2>
+            <form>
+                <label for="course-title">Course Title:</label>
+                <input type="text" id="course-title" name="course-title" placeholder="Course Title" required>
+                
+                <label for="course-description">Description:</label>
+                <textarea id="course-description" name="course-description" rows="5" placeholder="Course Description" required></textarea>
+                
+                <label for="course-duration">Duration:</label>
+                <input type="text" id="course-duration" name="course-duration" placeholder="Course Duration" required>
+                
+                <button type="submit">Save Course</button>
+            </form>
+        </div>
+
+        <div class="course-list">
+            <h2>Course List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Title</th>
+                        <th>Description</th>
+                        <th>Duration</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Introduction to Programming</td>
+                        <td>A beginner's course on programming concepts.</td>
+                        <td>10 weeks</td>
+                        <td>
+                            <a href="#">Edit</a> | <a href="#">Delete</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades and Feedback - Edupal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ff7200;
+        }
+
+        .container {
+            margin-top: 75px;
+            padding: 20px;
+        }
+
+        .performance-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .performance-container h2 {
+            color: #ff7200;
+        }
+
+        .performance-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .performance-container table, .performance-container th, .performance-container td {
+            border: 1px solid #ddd;
+        }
+
+        .performance-container th, .performance-container td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .performance-container th {
+            background: #333;
+            color: #fff;
+        }
+
+        .performance-container td a {
+            color: #ff7200;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .performance-container td a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Edupal 📚</div>
+        <div class="menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="performance-container">
+            <h2>Your Grades and Feedback</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Assignment</th>
+                        <th>Course</th>
+                        <th>Grade</th>
+                        <th>Feedback</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Programming Basics</td>
+                        <td>Introduction to Programming</td>
+                        <td>A</td>
+                        <td>Excellent work! Keep it up.</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

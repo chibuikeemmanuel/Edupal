@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Edupal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ff7200;
+        }
+
+        .container {
+            margin-top: 75px;
+            padding: 20px;
+        }
+
+        .dashboard-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .dashboard-card h3 {
+            margin-top: 0;
+            color: #ff7200;
+        }
+
+        .dashboard-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dashboard-card ul li {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff7200;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #fff;
+            color: #ff7200;
+        }
+        .widget {
+            width: 30%;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .widget h2 {
+            color: #007bff;
+        }
+        .widget a {
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .widget a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Edupal 📚</div>
+        <div class="menu">
+            <a href="courses.html">Courses</a>
+            <a href="profile.html">Profile</a>
+            <a href="logout.html">Logout</a>
+            <a href="santrum.html">santrum</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="dashboard-card">
+            <h3>Welcome, [User's Name]</h3>
+            <p>Your progress at a glance:</p>
+            <ul>
+                <li><strong>Completed Courses:</strong> 5</li>
+                <li><strong>Ongoing Courses:</strong> 2</li>
+                <li><strong>Upcoming Assignments:</strong> 3</li>
+            </ul>
+            <a href="courses.html" class="btn">Browse Courses</a>
+        </div>
+
+
+        <div class="dashboard-card">
+            <h3>Recent Activity</h3>
+            <p>See what's new in your courses:</p>
+            <ul>
+                <li><strong>Math 101:</strong> New assignment posted.</li>
+                <li><strong>Science 202:</strong> Your project grade is available.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

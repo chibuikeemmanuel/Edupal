@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Features</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .accessibility {
+            margin-bottom: 20px;
+        }
+        .accessibility label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .accessibility select,
+        .accessibility button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Accessibility Features</h1>
+        <div class="accessibility">
+            <label for="fontSize">Adjust Text Size:</label>
+            <select id="fontSize">
+                <option value="small">Small</option>
+                <option value="medium" selected>Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+        <div class="accessibility">
+            <label for="colorScheme">Select Color Scheme:</label>
+            <select id="colorScheme">
+                <option value="light">Light</option>
+                <option value="dark" selected>Dark</option>
+            </select>
+        </div>
+        <div class="accessibility">
+            <button>Text-to-Speech</button>
+        </div>
+    </div>
+</body>
+</html>

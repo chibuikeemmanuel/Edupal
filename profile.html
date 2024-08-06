@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .profile-header h1 {
+            margin: 0;
+            color: #007bff;
+        }
+        .profile-header p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .profile-section {
+            margin-bottom: 20px;
+        }
+        .profile-section h2 {
+            color: #007bff;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .profile-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .profile-section ul li {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .profile-section ul li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .profile-section ul li a:hover {
+            text-decoration: underline;
+        }
+        .profile-section .buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .profile-section .buttons a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <img src="https://via.placeholder.com/100" alt="User Avatar">
+            <div>
+                <h1>John Doe</h1>
+                <p>Email: john.doe@example.com</p>
+                <p>Location: New York, USA</p>
+                <p>Member since: January 2023</p>
+            </div>
+        </div>
+        <div class="profile-section">
+            <h2>Personal Information</h2>
+            <p>Full Name: Johnathan Doe</p>
+            <p>Bio: Enthusiastic learner with a passion for web development and design. Always looking to expand skills and knowledge.</p>
+        </div>
+        <div class="profile-section">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Completed Web Development Bootcamp - <a href="#">View Certificate</a></li>
+                <li>Top Performer in Data Analysis - <a href="#">View Badge</a></li>
+            </ul>
+        </div>
+        <div class="profile-section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Certified Full Stack Developer - <a href="#">View Certificate</a></li>
+                <li>Certified Data Scientist - <a href="#">View Certificate</a></li>
+            </ul>
+        </div>
+        <div class="profile-section">
+            <h2>Completed Courses</h2>
+            <ul>
+                <li><a href="#">Introduction to Programming</a></li>
+                <li><a href="#">Advanced JavaScript</a></li>
+                <li><a href="#">Machine Learning Basics</a></li>
+            </ul>
+        </div>
+        <div class="profile-section buttons">
+            <a href="#">Edit Profile</a>
+            <a href="#">Change Password</a>
+            <a href="#">Settings</a>
+        </div>
+    </div>
+</body>
+</html>

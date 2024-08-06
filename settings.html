@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #007bff;
+        }
+        .settings-item {
+            margin-bottom: 15px;
+        }
+        .settings-item label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .settings-item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .settings-item a {
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+        .settings-item a:hover {
+            text-decoration: underline;
+        }
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        body.dark-mode .container {
+            background: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+        <div class="section">
+            <h2>Appearance</h2>
+            <div class="settings-item">
+                <label for="dark-mode">Enable Dark Mode:</label>
+                <input type="checkbox" id="dark-mode">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Account</h2>
+            <div class="settings-item">
+                <h3>Payment Status</h3>
+                <p>Your current subscription status is: <strong>Paid</strong></p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Helpful Resources</h2>
+            <div class="settings-item">
+                <a href="#">FAQ</a>
+                <a href="#">Contact Support</a>
+                <a href="#">User Guide</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

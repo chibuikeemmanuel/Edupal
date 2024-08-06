@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes and Assessments - Edupal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('https://i.postimg.cc/YqFd6KWs/1.jpg') no-repeat center center/cover;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #ff7200;
+        }
+
+        .quiz {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 114, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        .quiz h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .quiz p {
+            margin: 10px 0;
+        }
+
+        .quiz button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff7200;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .quiz button:hover {
+            background: #e06b00;
+        }
+
+        .timer {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            margin: 0;
+        }
+
+        .answers {
+            list-style: none;
+            padding: 0;
+        }
+
+        .answers li {
+            margin-bottom: 10px;
+        }
+
+        .answers input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Quizzes and Assessments</h2>
+        <div class="quiz">
+            <h3>Quiz 1: Basic HTML and CSS</h3>
+            <div class="timer" id="timer">Time left: 10:00</div>
+            <div class="question">
+                <p>Question 1: What does HTML stand for?</p>
+                <ul class="answers">
+                    <li><label><input type="radio" name="q1"> Hyper Text Markup Language</label></li>
+                    <li><label><input type="radio" name="q1"> Home Tool Markup Language</label></li>
+                    <li><label><input type="radio" name="q1"> Hyperlinks and Text Markup Language</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>Question 2: What does CSS stand for?</p>
+                <ul class="answers">
+                    <li><label><input type="radio" name="q2"> Computer Style Sheets</label></li>
+                    <li><label><input type="radio" name="q2"> Cascading Style Sheets</label></li>
+                    <li><label><input type="radio" name="q2"> Colorful Style Sheets</label></li>
+                </ul>
+            </div>
+            <button onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+    </div>
+</body>
+</html>

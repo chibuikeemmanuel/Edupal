@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        .dashboard {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .widget {
+            width: 45%;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 10px 2.5%;
+        }
+        .widget h2 {
+            color: #007bff;
+        }
+        .widget a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .widget a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customizable Dashboard</h1>
+        <div class="dashboard">
+            <div class="widget">
+                <h2>Your Courses</h2>
+                <a href="#">View Enrolled Courses</a>
+                <a href="#">Check Upcoming Deadlines</a>
+            </div>
+            <div class="widget">
+                <h2>Quick Links</h2>
+                <a href="#">Access Study Groups</a>
+                <a href="#">Download Resources</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

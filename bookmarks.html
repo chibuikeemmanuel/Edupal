@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks - Edupal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ff7200;
+        }
+
+        .container {
+            margin-top: 75px;
+            padding: 20px;
+        }
+
+        .bookmark-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .bookmark-container h2 {
+            color: #ff7200;
+        }
+
+        .bookmark-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bookmark-container li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .bookmark-container li:last-child {
+            border-bottom: none;
+        }
+
+        .bookmark-container a {
+            text-decoration: none;
+            color: #ff7200;
+            font-weight: bold;
+        }
+
+        .bookmark-container a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Edupal 📚</div>
+        <div class="menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="bookmark-container">
+            <h2>Your Bookmarks</h2>
+            <ul>
+                <li><a href="#">Chapter 5 - Advanced Algorithms</a></li>
+                <li><a href="#">Lecture Notes on Machine Learning</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

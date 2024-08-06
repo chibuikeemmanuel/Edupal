@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Reviews - Edupal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('https://i.postimg.cc/YqFd6KWs/1.jpg') no-repeat center center/cover;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .review-form {
+            margin-bottom: 20px;
+        }
+
+        .review-form input, .review-form textarea, .review-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ff7200;
+            border-radius: 5px;
+            background: transparent;
+            color: #fff;
+        }
+
+        .review-form button {
+            padding: 10px 20px;
+            background: #ff7200;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .review-form button:hover {
+            background: #e06b00;
+        }
+
+        .reviews {
+            margin-top: 20px;
+        }
+
+        .review {
+            border-bottom: 1px solid #ff7200;
+            padding: 10px 0;
+        }
+
+        .review h3 {
+            margin: 0;
+        }
+
+        .review .rating {
+            color: #ff7200;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Course Reviews</h2>
+        <div class="review-form">
+            <h3>Leave a Review</h3>
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Your Review" rows="4" required></textarea>
+            <select required>
+                <option value="" disabled selected>Rating</option>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+            <button>Submit Review</button>
+        </div>
+        <div class="reviews">
+            <h3>All Reviews</h3>
+            <div class="review">
+                <h3>John Doe <span class="rating">★★★★★</span></h3>
+                <p>Great course, learned a lot!</p>
+            </div>
+            <div class="review">
+                <h3>Jane Smith <span class="rating">★★★★☆</span></h3>
+                <p>Good content but could be more detailed.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

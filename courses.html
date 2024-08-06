@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Edupal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff7200;
+        }
+
+        .courses-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .courses-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .course-card {
+            display: inline-block;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .course-card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .course-card p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .course-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .course-button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Edupal 📚</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="courses-section">
+            <h1>Our Courses</h1>
+            <div class="course-card">
+                <h2>Introduction to Programming</h2>
+                <p>Learn the basics of programming with Python and build a solid foundation.</p>
+                <a href="#" class="course-button">Enroll Now</a>
+            </div>
+            <div class="course-card">
+                <h2>Data Science Essentials</h2>
+                <p>Understand data science principles and techniques to analyze and visualize data.</p>
+                <a href="#" class="course-button">Enroll Now</a>
+            </div>
+            <div class="course-card">
+                <h2>Web Development Bootcamp</h2>
+                <p>Master HTML, CSS, and JavaScript to build interactive and dynamic websites.</p>
+                <a href="#" class="course-button">Enroll Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Edupal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

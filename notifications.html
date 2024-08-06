@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - Edupal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ff7200;
+        }
+
+        .container {
+            margin-top: 75px;
+            padding: 20px;
+        }
+
+        .notifications-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .notifications-container h2 {
+            color: #ff7200;
+        }
+
+        .notifications-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .notifications-container li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .notifications-container li:last-child {
+            border-bottom: none;
+        }
+
+        .notifications-container li p {
+            margin: 0;
+        }
+
+        .notifications-container li .date {
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Edupal 📚</div>
+        <div class="menu">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="courses.html">Courses</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="notifications-container">
+            <h2>Notifications</h2>
+            <ul>
+                <li>
+                    <p><strong>New Assignment:</strong> Your assignment "Machine Learning Basics" is due next week.</p>
+                    <p class="date">July 30, 2024</p>
+                </li>
+                <li>
+                    <p><strong>Course Update:</strong> The course "Advanced Algorithms" has been updated with new materials.</p>
+                    <p class="date">July 29, 2024</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

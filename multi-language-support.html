@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-language Translation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .translate-section {
+            margin-bottom: 20px;
+        }
+        .translate-section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .translate-section select,
+        .translate-section input,
+        .translate-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .translate-section button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .translate-section button:hover {
+            background-color: #0056b3;
+        }
+        .translation-result {
+            margin-top: 20px;
+        }
+        .translation-result h2 {
+            margin-bottom: 10px;
+        }
+        .translation-result p {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-language Translation</h1>
+        
+        <div class="translate-section">
+            <h2>Translate a Word</h2>
+            <label for="wordInput">Enter word to translate:</label>
+            <input type="text" id="wordInput" placeholder="Enter word">
+            <label for="languageSelect">Select target language:</label>
+            <select id="languageSelect">
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="it">Italian</option>
+                <option value="pt">Portuguese</option>
+                <option value="ru">Russian</option>
+                <option value="zh">Chinese</option>
+                <option value="ja">Japanese</option>
+            </select>
+            <button>Translate</button>
+            <div class="translation-result">
+                <h2>Translation Result:</h2>
+                <p id="wordResult">
+                    <strong>English:</strong> hello<br>
+                    <strong>Spanish:</strong> Hola<br>
+                    <strong>French:</strong> Bonjour<br>
+                    <strong>German:</strong> Hallo<br>
+                    <strong>Italian:</strong> Ciao<br>
+                    <strong>Portuguese:</strong> Olá<br>
+                    <strong>Russian:</strong> Здравствуйте<br>
+                    <strong>Chinese:</strong> 你好<br>
+                    <strong>Japanese:</strong> こんにちは
+                </p>
+            </div>
+        </div>
+        
+        <div class="translate-section">
+            <h2>Translate a Sentence</h2>
+            <label for="sentenceInput">Enter sentence to translate:</label>
+            <textarea id="sentenceInput" rows="4" placeholder="Enter sentence"></textarea>
+            <label for="sentenceLanguageSelect">Select target language:</label>
+            <select id="sentenceLanguageSelect">
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="it">Italian</option>
+                <option value="pt">Portuguese</option>
+                <option value="ru">Russian</option>
+                <option value="zh">Chinese</option>
+                <option value="ja">Japanese</option>
+            </select>
+            <button>Translate</button>
+            <div class="translation-result">
+                <h2>Translation Result:</h2>
+                <p id="sentenceResult">
+                    <strong>English:</strong> How are you?<br>
+                    <strong>Spanish:</strong> ¿Cómo estás?<br>
+                    <strong>French:</strong> Comment ça va?<br>
+                    <strong>German:</strong> Wie geht es dir?<br>
+                    <strong>Italian:</strong> Come stai?<br>
+                    <strong>Portuguese:</strong> Como você está?<br>
+                    <strong>Russian:</strong> Как вы?<br>
+                    <strong>Chinese:</strong> 你好吗？<br>
+                    <strong>Japanese:</strong> お元気ですか？
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

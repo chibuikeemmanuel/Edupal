@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PEER REVIEW</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Peer Review Section */
+.peer-review {
+  background-color: #f7f7f7;
+  padding: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.peer-review h2 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form Styling */
+.peer-review form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.peer-review label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #666;
+}
+
+.peer-review select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.peer-review textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.peer-review button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.peer-review button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Learner Profile Cards */
+.learner-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.learner-card {
+  margin: 20px;
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.learner-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.learner-card h3 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.learner-card p {
+  margin-bottom: 10px;
+  color: #666;
+}
+nav {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mentorship-form.html">Mentorship</a></li>
+      <li><a href="peer-review.html">Peer Review</a></li>
+    </ul>
+</nav>
+<header>
+    <h1> PEER REVIEW</h1>
+</header>
+<main>
+<div class="peer-review">
+    <h2>Peer Review and Feedback</h2>
+    <form>
+      <label for="learner-select">Select a Learner:</label>
+      <select id="learner-select">
+        <option value="">Select a Learner</option>
+        <option value="1">John Doe</option>
+        <option value="2">Jane Smith</option>
+        <option value="3">Bob Johnson</option>
+      </select>
+      <label for="feedback">Provide Feedback:</label>
+      <textarea id="feedback" placeholder="Enter your feedback"></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+  <div class="learner-grid">
+    <div class="learner-card">
+      <img src="john-doe.jpg" alt="John Doe">
+      <h3>John Doe</h3>
+      <p>Software Engineer</p>
+      <p>Current Project: Building a React App</p>
+    </div>
+</div>
+</div>
+<div class="learner-card">
+  <img src="jane-smith.jpg" alt="Jane Smith">
+  <h3>Jane Smith</h3>
+  <p>Data Scientist</p>
+  <p>Current Project: Building a Machine Learning Model</p>
+</div>
+<div class="learner-card">
+  <img src="bob-johnson.jpg" alt="Bob Johnson">
+  <h3>Bob Johnson</h3>
+  <p>Product Manager</p>
+  <p>Current Project: Developing a New Product Feature</p>
+</div>
+</div>
+</main>
+</body>
+</html>
